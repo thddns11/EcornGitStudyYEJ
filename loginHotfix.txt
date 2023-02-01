@@ -1,5 +1,13 @@
 //로그인 기능 추가
+<form name="loginForm">
 <form>
 	<input name="id">
 	<input name="pw">
 </form>
+<script>
+	document.form.loginForm.id.onchange=function(e){
+	if(this.value.length<4){
+	alert("아이디는 4글자 이상입니다!");
+	}
+}
+</script>
